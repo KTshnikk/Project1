@@ -1,2 +1,26 @@
 nyhb vgm bjnsfcxZA123
 Ямщиков Юрий
+
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+void main() {
+system("chcp 1251");
+int p, n, k, j, num;
+k = 0;
+j = 0;
+p = 1;
+num = 0;
+printf("Введите последовательность из разных чисел черзе пробел ");
+do {
+scanf("%i", &n); 
+j = j + 1; 
+if (n < 0) {
+k = k + 1; 
+p = p * n; 
+num = j;
+}
+} while (getchar() != '\n');
+printf("%i, %i, %i \n", k, p, num);
+}
